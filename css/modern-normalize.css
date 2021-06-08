@@ -15,18 +15,6 @@ Use a better box model (opinionated).
   box-sizing: border-box;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-}
-
-ul {
-  list-style: none;
-}
-a {
-  color: inherit;
-  text-decoration: none;
-}
 /**
 Use a more readable tab size (opinionated).
 */
@@ -46,10 +34,6 @@ html {
   -webkit-text-size-adjust: 100%; /* 2 */
 }
 
-html,
-body {
-  width: 100%;
-}
 /*
 Sections
 ========
@@ -192,11 +176,6 @@ textarea {
 Remove the inheritance of text transform in Edge and Firefox.
 1. Remove the inheritance of text transform in Firefox.
 */
-
-button {
-  border: none;
-  text-decoration: none;
-}
 
 button,
 select {
