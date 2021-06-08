@@ -64,6 +64,7 @@ img {
   line-height: 1.166;
   letter-spacing: 0.03em;
   text-align: center;
+  margin-bottom: 50px;
 }
 
 .logo,
@@ -94,12 +95,45 @@ img {
   letter-spacing: 0.02em;
 }
 
-.nav {
-  color: var(--main-color);
+.header .container {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-.header .contact {
+.header .nav {
+  color: var(--main-color);
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  align-items: center;
+}
+
+.logo {
+  margin-right: 93px;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-link:not(:last-child) {
+  margin-right: 50px;
+}
+
+.contact {
   color: var(--text-color);
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  align-items: center;
+}
+
+.contact-link:not(:last-child) {
+  margin-right: 50px;
 }
 
 .nav .nav-link:hover,
@@ -119,6 +153,7 @@ img {
 .hero {
   background-color: var(--dark-background-color);
 }
+
 .hero .container {
   padding: 195px 285px;
   text-align: center;
@@ -191,13 +226,9 @@ img {
   padding-bottom: 94px;
 }
 
-.info .title {
-  margin-bottom: 50px;
-}
-
 .info .img {
   display: flex;
-  flex-direction: row;
+  flex-flow: row wrap;
 }
 
 .info .info-img:not(:last-child) {
@@ -206,10 +237,28 @@ img {
 
 /* team */
 
-.team {
+.team .container {
   background-color: #f5f4fa;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
+.workers {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.workers > li {
+  background-color: #ffffff;
+  text-align: center;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.workers > li:not(:last-child) {
+  margin-right: 30px;
+}
 .name {
   font-weight: 500;
   font-size: 16px;
@@ -225,9 +274,18 @@ img {
   color: var(--text-color);
 }
 
+.workers .job {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.workers .name {
+  margin-bottom: 30px;
+}
+
 /* footer */
 
-.footer {
+.footer .container {
   background-color: var(--dark-background-color);
 }
 
