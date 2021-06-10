@@ -93,6 +93,7 @@ img {
   font-size: 14px;
   line-height: 1.142;
   letter-spacing: 0.02em;
+  border-bottom: 1px solid #ececec;
 }
 
 .header .container {
@@ -210,6 +211,7 @@ img {
 }
 .descr {
   display: flex;
+  justify-content: center;
   flex-direction: row;
 }
 .text {
@@ -237,8 +239,11 @@ img {
 
 /* team */
 
-.team .container {
+.team {
   background-color: #f5f4fa;
+}
+
+.team .container {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -275,18 +280,26 @@ img {
 }
 
 .workers .job {
+  margin-bottom: 30px;
+}
+
+.workers .name {
   margin-top: 30px;
   margin-bottom: 10px;
 }
 
-.workers .name {
-  margin-bottom: 30px;
-}
-
 /* footer */
 
-.footer .container {
+.footer {
   background-color: var(--dark-background-color);
+}
+
+.footer .container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
 }
 
 .address {
@@ -296,6 +309,14 @@ img {
   line-height: 1.714;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+
+.address ul {
+  margin-top: 20px;
+}
+
+.address ul > li:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 .direction {
@@ -309,6 +330,11 @@ img {
 }
 
 /* portfolio */
+
+.portfolio .container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
 .p-button {
   font-weight: 500;
@@ -331,12 +357,24 @@ img {
   background-color: var(--blue-color);
 }
 
+.buttons {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  margin-bottom: 34px;
+}
+
+.buttons > li:not(:last-child) {
+  margin-right: 8px;
+}
+
 .p-title {
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--main-color);
+  margin: 20px 24px 4px;
 }
 
 .p-text {
@@ -345,4 +383,28 @@ img {
   line-height: 1.875;
   letter-spacing: 0.03em;
   color: var(--text-color);
+  margin: 0 24px 20px;
+}
+
+.projects {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.projects > li {
+  margin-right: 30px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  width: 370px;
+}
+
+.projects > li:nth-child(3n + 3) {
+  margin-right: 0;
+}
+
+.projects > li:nth-last-child(-n + 3) {
+  margin-bottom: 0;
 }
