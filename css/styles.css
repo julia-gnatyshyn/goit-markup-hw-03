@@ -38,6 +38,7 @@ ul {
 a {
   color: inherit;
   text-decoration: none;
+  display: block;
 }
 
 button {
@@ -94,20 +95,18 @@ img {
   line-height: 1.142;
   letter-spacing: 0.02em;
   border-bottom: 1px solid #ececec;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .header .container {
-  padding-top: 32px;
-  padding-bottom: 32px;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  align-items: center;
 }
 
 .header .nav {
   color: var(--main-color);
   display: flex;
-  justify-content: flex-start;
   flex-direction: row;
   align-items: center;
 }
@@ -118,19 +117,16 @@ img {
 
 .nav-links {
   display: flex;
-  flex-direction: row;
 }
 
 .nav-link:not(:last-child) {
   margin-right: 50px;
 }
 
-.contact {
+.header .contact {
   color: var(--text-color);
   display: flex;
-  justify-content: flex-end;
-  flex-direction: row;
-  align-items: center;
+  margin-left: auto;
 }
 
 .contact-link:not(:last-child) {
@@ -184,9 +180,13 @@ img {
   min-width: 200px;
 }
 
+.hero-button:hover,
+.hero-button:focus {
+  color: var(--main-color);
+}
 /* advantages */
 
-.description .container {
+.description {
   padding-top: 89px;
   padding-bottom: 94px;
 }
@@ -207,13 +207,14 @@ img {
 .advantages {
   width: 270px;
   display: flex;
-  flex-flow: column wrap;
+  flex-direction: column;
 }
+
 .descr {
   display: flex;
-  justify-content: center;
-  flex-direction: row;
+  flex-flow: row wrap;
 }
+
 .text {
   font-weight: normal;
   font-size: 14px;
@@ -224,7 +225,7 @@ img {
 
 /* information */
 
-.info .container {
+.info {
   padding-bottom: 94px;
 }
 
@@ -241,9 +242,6 @@ img {
 
 .team {
   background-color: #f5f4fa;
-}
-
-.team .container {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -251,11 +249,11 @@ img {
 .workers {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
 }
 
 .workers > li {
   background-color: #ffffff;
+  width: 270px;
   text-align: center;
   display: flex;
   flex-direction: column-reverse;
@@ -264,6 +262,7 @@ img {
 .workers > li:not(:last-child) {
   margin-right: 30px;
 }
+
 .name {
   font-weight: 500;
   font-size: 16px;
@@ -292,9 +291,6 @@ img {
 
 .footer {
   background-color: var(--dark-background-color);
-}
-
-.footer .container {
   padding-top: 60px;
   padding-bottom: 60px;
   display: flex;
@@ -331,7 +327,7 @@ img {
 
 /* portfolio */
 
-.portfolio .container {
+.portfolio {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -389,7 +385,6 @@ img {
 .projects {
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
 }
 
 .projects > li {
@@ -401,7 +396,7 @@ img {
   width: 370px;
 }
 
-.projects > li:nth-child(3n + 3) {
+.projects > li:nth-child(3n) {
   margin-right: 0;
 }
 
